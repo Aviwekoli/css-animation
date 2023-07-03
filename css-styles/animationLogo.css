@@ -2,7 +2,26 @@
     background-color: black;
 }
 
-.linkedIn{
-    width: 50px;
+@keyframes animation1{
+    25%{opacity: 0.5; transform: translateX(200px);}
+    50%{opacity: 0.3; transform: translateY(200px);}
+    75%{opacity: 0.2; transform: rotate(180deg);}
+    100%{opacity:1; transform:scale(2)}
+    }
+
+div img{
+    width: 50px; 
     height: 50px;
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    animation-name: animationChallenge;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+img:hover{
+    animation-name: animation1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
